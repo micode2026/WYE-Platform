@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women & Youth Entrepreneurship Platform – Digital Tigray</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar hidden">
+    <div class="nav-brand">
+      <div class="nav-logo">🌱</div>
+      <span class="nav-title">WYE Platform</span>
+    </div>
+
+    <div class="nav-links" id="nav-links"></div>
+
+    <div class="nav-actions">
+      <!-- Language toggle -->
+      <button class="lang-toggle" id="lang-toggle-btn">ትግርኛ</button>
+
+      <!-- Night mode toggle -->
+      <button class="theme-toggle" id="theme-toggle-btn" title="Toggle dark mode">🌙</button>
+
+      <!-- Notifications -->
+      <button class="icon-btn" id="notif-btn" title="Notifications">
+        🔔<span class="badge hidden" id="notif-badge">0</span>
+      </button>
+
+      <!-- User -->
+      <div class="avatar-wrap" id="nav-avatar">
+        <div class="avatar" id="user-avatar-small">?</div>
+        <span id="nav-username"></span>
+      </div>
+
+      <button class="btn btn-sm btn-outline" id="logout-btn">Sign out</button>
+    </div>
+  </nav>
+
+  <!-- NOTIFICATION PANEL -->
+  <div class="notif-panel hidden" id="notif-panel">
+    <div class="notif-header">
+      <strong id="notif-heading">Notifications</strong>
+      <button class="link-btn" id="mark-all-read">Mark all read</button>
+    </div>
+    <div id="notif-list"></div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main"></main>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav hidden" id="mobile-nav">
+    <a href="#/dashboard"  class="mob-nav-item" data-route="dashboard">🏠<span>Home</span></a>
+    <a href="#/courses"    class="mob-nav-item" data-route="courses">📚<span>Courses</span></a>
+    <a href="#/mentorship" class="mob-nav-item" data-route="mentorship">🤝<span>Mentors</span></a>
+    <a href="#/resources"  class="mob-nav-item" data-route="resources">📂<span>Resources</span></a>
+    <a href="#/profile"    class="mob-nav-item" data-route="profile">👤<span>Profile</span></a>
+  </nav>
+
+</div>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toast-container"></div>
+
+<!-- MODAL -->
+<div class="modal-overlay hidden" id="modal-overlay">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <h3 id="modal-title"></h3>
+      <button class="icon-btn" id="modal-close">✕</button>
+    </div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/translations.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

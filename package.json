@@ -1,0 +1,22 @@
+{
+  "name": "women-youth-entrepreneurship-platform",
+  "version": "1.0.0",
+  "description": "Digital Women & Youth Entrepreneurship Platform – Digital Tigray Agency",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "nodemon --exec 'node --no-warnings' server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
